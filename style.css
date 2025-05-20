@@ -332,3 +332,57 @@ input[readonly] {
     background-color: #f0f0f0;
     border-color: #ddd;
 }
+
+/* Adicione estas regras ao seu CSS existente */
+
+/* Mensagens do CEP */
+.cep-message {
+    font-size: 0.8em;
+    margin-left: 10px;
+    display: none;
+}
+
+#cep-loading {
+    color: #4E342E;
+    font-style: italic;
+}
+
+#cep-error {
+    color: red;
+}
+
+/* Campo CEP com ícone */
+.cep-group {
+    position: relative;
+}
+
+.cep-group:after {
+    content: "⌕";
+    position: absolute;
+    right: 10px;
+    top: 35px;
+    color: #4E342E;
+}
+
+/* Melhorias nos campos de endereço */
+.endereco {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+.endereco legend {
+    padding: 0 10px;
+    font-weight: bold;
+    color: #4E342E;
+}
+
+/* Validação */
+input:invalid {
+    border-color: #ff9999;
+}
+
+input:valid {
+    border-color: #dddddd;
+}
