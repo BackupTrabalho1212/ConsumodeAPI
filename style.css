@@ -1,0 +1,321 @@
+/* Reset e Estilos Globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+header {
+    background-color: #4E342E;
+    color: white;
+    padding: 20px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.logo {
+    height: 60px;
+    float: left;
+}
+
+nav ul {
+    float: right;
+    list-style: none;
+    margin-top: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #D7CCC8;
+}
+
+/* Clearfix */
+header::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Main Content */
+main {
+    padding: 40px 0;
+    min-height: calc(100vh - 200px); /* Ajuste para o footer ficar no fundo */
+}
+
+.banner {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../img/cafe-banner.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    margin-bottom: 40px;
+}
+
+.banner h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.banner p {
+    font-size: 1.2rem;
+}
+
+/* Produtos */
+.produtos {
+    margin-bottom: 40px;
+}
+
+.produtos h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #4E342E;
+}
+
+.grid-produtos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.produto {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.produto:hover {
+    transform: translateY(-5px);
+}
+
+.produto img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.produto h3 {
+    padding: 15px 20px 5px;
+    color: #4E342E;
+}
+
+.produto p {
+    padding: 0 20px 20px;
+    color: #666;
+}
+
+/* Sobre */
+.sobre h1, .sobre h2 {
+    color: #4E342E;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.historia {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 40px;
+    gap: 30px;
+}
+
+.historia img {
+    flex: 1;
+    min-width: 300px;
+    border-radius: 8px;
+}
+
+.texto-historia {
+    flex: 1;
+    min-width: 300px;
+}
+
+.texto-historia p {
+    margin-bottom: 15px;
+}
+
+.valores {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.valor {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.valor h3 {
+    color: #4E342E;
+    margin-bottom: 10px;
+}
+
+/* Cadastro */
+.cadastro {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.cadastro h1 {
+    color: #4E342E;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.cadastro p {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #666;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+    color: #4E342E;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.endereco {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.endereco legend {
+    padding: 0 10px;
+    color: #4E342E;
+    font-weight: 500;
+}
+
+.termos {
+    display: flex;
+    align-items: center;
+}
+
+.termos input {
+    width: auto;
+    margin-right: 10px;
+}
+
+.btn-cadastrar {
+    background-color: #4E342E;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+.btn-cadastrar:hover {
+    background-color: #3E2723;
+}
+
+/* Footer */
+footer {
+    background-color: #4E342E;
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+}
+
+footer p {
+    margin-bottom: 15px;
+}
+
+.redes-sociais img {
+    height: 30px;
+    margin: 0 10px;
+    transition: opacity 0.3s;
+}
+
+.redes-sociais img:hover {
+    opacity: 0.8;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .logo {
+        float: none;
+        display: block;
+        margin: 0 auto 15px;
+    }
+    
+    nav ul {
+        float: none;
+        text-align: center;
+    }
+    
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+    
+    .banner h1 {
+        font-size: 2rem;
+    }
+    
+    .banner p {
+        font-size: 1rem;
+    }
+    
+    .historia {
+        flex-direction: column;
+    }
+    
+    .historia img, .texto-historia {
+        min-width: 100%;
+    }
+    
+    .cadastro {
+        padding: 20px 15px;
+    }
+}
