@@ -319,3 +319,16 @@ footer p {
         padding: 20px 15px;
     }
 }
+/* Adicione estas regras */
+#cep-loading {
+    color: #4E342E;
+    font-size: 0.8em;
+    margin-left: 10px;
+    font-style: italic;
+}
+
+/* Estilo para campos preenchidos automaticamente */
+input[readonly] {
+    background-color: #f0f0f0;
+    border-color: #ddd;
+}
